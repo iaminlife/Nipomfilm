@@ -13,6 +13,7 @@
     "css|/wp-content/plugins/elementor/assets/css/widget-google_maps.min.css": "widget-google_maps.min.css",
     "css|/wp-content/uploads/elementor/css/base-desktop.css": "base-desktop.css",
     "css|/wp-content/uploads/elementor/css/local-35-frontend-desktop.css": "local-35-frontend-desktop.css",
+    "css|/wp-content/uploads/elementor/css/local-35-frontend-tablet.css": "local-35-frontend-tablet.css",
     "css|/wp-content/uploads/elementor/css/base-mobile.css": "base-mobile.css",
     "js|/wp-includes/js/jquery/jquery.min.js": "jquery.min.js",
     "js|/wp-includes/js/jquery/jquery-migrate.min.js": "jquery-migrate.min.js",
