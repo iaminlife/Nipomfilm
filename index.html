@@ -80,28 +80,38 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <header id="site-header" class="site-header dynamic-header header-stacked menu-dropdown-mobile">
 	<div class="header-inner">
 		<div class="site-branding show-logo">
-							<div class="site-logo hide">
-					<a href="./" class="custom-logo-link" rel="home" aria-current="page"><img fetchpriority="high" width="500" height="500" src="./images/logo.png" class="custom-logo" alt="Nipon Film" decoding="async" srcset="./images/logo.png 500w, ./images/logo-300x300.png 300w, ./images/logo-150x150.png 150w" sizes="(max-width: 500px) 100vw, 500px"></a>				</div>
-					</div>
+			<div class="site-logo hide">
+				<a href="./" class="custom-logo-link" rel="home" aria-current="page"><img fetchpriority="high" width="500" height="500" src="./images/logo.png" class="custom-logo" alt="Nipon Film" decoding="async" srcset="./images/logo.png 500w, ./images/logo-300x300.png 300w, ./images/logo-150x150.png 150w" sizes="(max-width: 500px) 100vw, 500px"></a>
+            </div>
+		</div>
 
-					<nav class="site-navigation show" aria-label="Main menu">
-				<ul id="menu-primary-menu" class="menu"><li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-35 current_page_item menu-item-41"><a href="./" aria-current="page">Home</a></li>
-<li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44"><a href="./our-services/">Our Services</a></li>
-<li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="./our-story/">Our Story</a></li>
-<li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43"><a href="./contact-us/">Contact Us</a></li>
-</ul>			</nav>
-							<div class="site-navigation-toggle-holder show">
-				<button type="button" class="site-navigation-toggle" aria-label="Menu">
-					<span class="site-navigation-toggle-icon" aria-hidden="true"></span>
-				</button>
-			</div>
-			<nav class="site-navigation-dropdown show" aria-label="Mobile menu" aria-hidden="true" inert>
-				<ul id="menu-primary-menu-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-35 current_page_item menu-item-41"><a href="./" aria-current="page">Home</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44"><a href="./our-services/">Our Services</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="./our-story/">Our Story</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43"><a href="./contact-us/">Contact Us</a></li>
-</ul>			</nav>
-			</div>
+		<!-- เปลี่ยนจาก show เป็น hide เพื่อซ่อนเมนูหลัก (Desktop) -->
+		<nav class="site-navigation hide" aria-label="Main menu">
+			<ul id="menu-primary-menu" class="menu">
+                <li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-35 current_page_item menu-item-41"><a href="./" aria-current="page">Home</a></li>
+                <li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44"><a href="./our-services/">Our Services</a></li>
+                <li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="./our-story/">Our Story</a></li>
+                <li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43"><a href="./contact-us/">Contact Us</a></li>
+            </ul>			
+        </nav>
+		
+        <!-- เปลี่ยนจาก show เป็น hide เพื่อซ่อนปุ่มกดเมนู (Mobile) -->
+        <div class="site-navigation-toggle-holder hide">
+			<button type="button" class="site-navigation-toggle" aria-label="Menu">
+				<span class="site-navigation-toggle-icon" aria-hidden="true"></span>
+			</button>
+		</div>
+		
+        <!-- เปลี่ยนจาก show เป็น hide เพื่อซ่อนรายการเมนูที่กางออก (Mobile) -->
+        <nav class="site-navigation-dropdown hide" aria-label="Mobile menu" aria-hidden="true" inert>
+			<ul id="menu-primary-menu-1" class="menu">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-35 current_page_item menu-item-41"><a href="./" aria-current="page">Home</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44"><a href="./our-services/">Our Services</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="./our-story/">Our Story</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43"><a href="./contact-us/">Contact Us</a></li>
+            </ul>			
+        </nav>
+	</div>
 </header>
 		<div data-elementor-type="wp-page" data-elementor-id="35" class="elementor elementor-35">
 				<div class="elementor-element elementor-element-d5cfde3 e-flex e-con-boxed e-con e-parent" data-id="d5cfde3" data-element_type="container" data-e-type="container" data-settings='{"background_background":"classic"}'>
