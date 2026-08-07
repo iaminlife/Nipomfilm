@@ -542,50 +542,48 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
 <script id="back-to-top-js" src="./js/back-to-top.js"></script>
 <!-- เลื่อนรูป -->
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    // รอหน่วงเวลาเล็กน้อยเพื่อให้ไฟล์ swiper.min.js โหลดเสร็จสมบูรณ์
-    setTimeout(function() {
-        if (typeof Swiper !== 'undefined') {
-            // ค้นหาชุดสไลด์ผลงานทั้งหมดในหน้าเว็บ
-            const carousels = document.querySelectorAll('.elementor-image-carousel-wrapper');
-            
-            carousels.forEach(function(carousel) {
-                new Swiper(carousel, {
-                    slidesPerView: 1, // จำนวนรูปที่แสดงบนมือถือ
-                    spaceBetween: 20, // ระยะห่างระหว่างรูป
-                    loop: true, // เลื่อนวนลูปไปเรื่อยๆ
-                    speed: 500, // ความเร็วตอนเปลี่ยนรูป
-                    autoplay: {
-                        delay: 5000, // เลื่อนอัตโนมัติทุก 5 วินาที
-                        disableOnInteraction: false,
-                        pauseOnMouseEnter: true, // หยุดชั่วคราวเมื่อเอาเมาส์ชี้
+window.addEventListener("load", function() {
+    // โค้ดนี้จะทำงานก็ต่อเมื่อทุกอย่าง (รวมถึงไฟล์ js ภายนอก) โหลดเสร็จสมบูรณ์ 100%
+    if (typeof Swiper !== 'undefined') {
+        // ค้นหาชุดสไลด์ผลงานทั้งหมดในหน้าเว็บ
+        const carousels = document.querySelectorAll('.elementor-image-carousel-wrapper');
+        
+        carousels.forEach(function(carousel) {
+            new Swiper(carousel, {
+                slidesPerView: 1, // จำนวนรูปที่แสดงบนมือถือ
+                spaceBetween: 20, // ระยะห่างระหว่างรูป
+                loop: true, // เลื่อนวนลูปไปเรื่อยๆ
+                speed: 500, // ความเร็วตอนเปลี่ยนรูป
+                autoplay: {
+                    delay: 5000, // เลื่อนอัตโนมัติทุก 5 วินาที
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true, // หยุดชั่วคราวเมื่อเอาเมาส์ชี้
+                },
+                navigation: {
+                    nextEl: carousel.querySelector('.elementor-swiper-button-next'),
+                    prevEl: carousel.querySelector('.elementor-swiper-button-prev'),
+                },
+                pagination: {
+                    el: carousel.querySelector('.swiper-pagination'),
+                    clickable: true,
+                },
+                breakpoints: {
+                    // ขนาดหน้าจอ Tablet (มากกว่า 768px)
+                    768: {
+                        slidesPerView: 2, // แสดง 2 รูป
+                        spaceBetween: 20,
                     },
-                    navigation: {
-                        nextEl: carousel.querySelector('.elementor-swiper-button-next'),
-                        prevEl: carousel.querySelector('.elementor-swiper-button-prev'),
-                    },
-                    pagination: {
-                        el: carousel.querySelector('.swiper-pagination'),
-                        clickable: true,
-                    },
-                    breakpoints: {
-                        // ขนาดหน้าจอ Tablet (มากกว่า 768px)
-                        768: {
-                            slidesPerView: 2, // แสดง 2 รูป
-                            spaceBetween: 20,
-                        },
-                        // ขนาดหน้าจอ Desktop (มากกว่า 1024px)
-                        1024: {
-                            slidesPerView: 3, // แสดง 3 รูป
-                            spaceBetween: 30,
-                        }
+                    // ขนาดหน้าจอ Desktop (มากกว่า 1024px)
+                    1024: {
+                        slidesPerView: 3, // แสดง 3 รูป
+                        spaceBetween: 30,
                     }
-                });
+                }
             });
-        } else {
-            console.error("Swiper is not loaded. โปรดตรวจสอบว่ามีไฟล์ swiper.min.js ในโฟลเดอร์ js แล้ว");
-        }
-    }, 500); // หน่วงเวลา 0.5 วินาที
+        });
+    } else {
+        console.error("Swiper is not loaded. โปรดตรวจสอบว่ามีไฟล์ swiper.min.js ในโฟลเดอร์ js แล้ว");
+    }
 });
 </script>
 
