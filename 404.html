@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>404 ไม่พบหน้าที่ค้นหา - นิพนธ์ ฟิล์ม (Nipon Film)</title>
+	<meta name="robots" content="noindex, follow"> <!-- แนะนำให้ใส่ noindex เพื่อไม่ให้ Google เก็บหน้า 404 ไปจัดอันดับ -->
+	<link rel="icon" href="./images/logo-150x150.png" sizes="32x32">
+	
+	<!-- ดึงฟอนต์ Poppins และ Font Awesome มาใช้ -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" media="all">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	
+	<style>
+		body {
+			margin: 0;
+			font-family: 'Poppins', sans-serif;
+			background-color: #F3F5F8;
+			color: #324A6D;
+			display: flex;
+			flex-direction: column;
+			min-height: 100vh;
+		}
+		
+		/* ส่วนของ Header (สไตล์พื้นฐานให้แสดงผลได้) */
+		.site-header {
+			background-color: #ffffff;
+			padding: 15px 5%;
+			box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.site-logo img {
+			max-height: 60px;
+			width: auto;
+		}
+		.site-navigation ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			gap: 20px;
+		}
+		.site-navigation a {
+			text-decoration: none;
+			color: #1C244B;
+			font-weight: 500;
+			transition: color 0.3s;
+		}
+		.site-navigation a:hover {
+			color: #467FF7;
+		}
+
+		/* ส่วนเนื้อหาหลักของ 404 */
+		.error-404-content {
+			flex-grow: 1; /* ดัน Footer ลงไปด้านล่างสุดเสมอ */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			padding: 60px 20px;
+		}
+		.error-404-box {
+			max-width: 600px;
+			background: #ffffff;
+			padding: 50px 40px;
+			border-radius: 20px;
+			box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+		}
+		.error-404-box h1 {
+			font-size: 120px;
+			margin: 0;
+			color: #1C244B;
+			line-height: 1;
+			text-shadow: 4px 4px 0px rgba(70, 127, 247, 0.2);
+		}
+		.error-404-box h2 {
+			font-size: 28px;
+			margin: 10px 0 20px;
+			color: #1C244B;
+		}
+		.error-404-box p {
+			font-size: 16px;
+			color: #666;
+			line-height: 1.6;
+			margin-bottom: 30px;
+		}
+
+		/* ปุ่ม Button */
+		.btn-group {
+			display: flex;
+			justify-content: center;
+			gap: 15px;
+			flex-wrap: wrap;
+		}
+		.btn {
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
+			padding: 14px 30px;
+			border-radius: 50px;
+			font-size: 16px;
+			font-weight: 500;
+			text-decoration: none;
+			color: #fff;
+			transition: transform 0.2s, box-shadow 0.2s;
+		}
+		.btn-home {
+			background-color: #245CDB;
+			box-shadow: 0 4px 15px rgba(36,92,219,0.3);
+		}
+		.btn-line {
+			background-color: #08BE28;
+			box-shadow: 0 4px 15px rgba(8,190,40,0.3);
+		}
+		.btn:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+		}
+
+		/* ส่วนของ Footer */
+		.site-footer {
+			background-color: #467FF7;
+			color: #ffffff;
+			text-align: center;
+			padding: 20px;
+			font-size: 14px;
+		}
+
+		/* Responsive */
+		@media (max-width: 767px) {
+			.error-404-box h1 { font-size: 80px; }
+			.error-404-box h2 { font-size: 22px; }
+			.site-navigation { display: none; } /* ซ่อนเมนูบนมือถือเพื่อความเรียบง่ายในหน้า 404 */
+		}
+	</style>
+</head>
+<body>
+
+	<!-- Header (ใช้แบบ Sticky เหมือนหน้าแรก) -->
+	<header id="site-header" class="site-header" style="position: sticky; top: 0; z-index: 9999;">
+		<div class="site-logo">
+			<a href="https://niponfilm.ainlife.work/"><img src="./images/logo.png" alt="นิพนธ์ ฟิล์ม นครปฐม"></a>
+		</div>
+		<nav class="site-navigation">
+			<ul>
+				<li><a href="https://niponfilm.ainlife.work/">หน้าแรก</a></li>
+				<li><a href="https://niponfilm.ainlife.work/#services">บริการ</a></li>
+				<li><a href="https://niponfilm.ainlife.work/#Portfolio">ผลงาน</a></li>
+				<li><a href="https://niponfilm.ainlife.work/#contact">ติดต่อเรา</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Main 404 Content -->
+	<main class="error-404-content">
+		<div class="error-404-box">
+			<h1>404</h1>
+			<h2>ขออภัย ไม่พบหน้าที่คุณค้นหา</h2>
+			<p>หน้าที่คุณกำลังพยายามเข้าถึงอาจถูกลบ เปลี่ยนชื่อลิงก์ หรือไม่มีอยู่จริง<br>กรุณาตรวจสอบ URL อีกครั้ง หรือกลับสู่หน้าหลักของเรา</p>
+			
+			<div class="btn-group">
+				<a href="https://niponfilm.ainlife.work/" class="btn btn-home">
+					<i class="fas fa-home"></i> กลับสู่หน้าแรก
+				</a>
+				<a href="https://line.me/ti/p/~pikkypik246" target="_blank" class="btn btn-line">
+					<i class="fab fa-line"></i> ติดต่อสอบถาม
+				</a>
+			</div>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="site-footer">
+		<p>&copy; 2026 Nipon Film. All Rights Reserved.</p>
+	</footer>
+
+</body>
+</html>
