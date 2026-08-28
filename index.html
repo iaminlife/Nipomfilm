@@ -98,6 +98,23 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <meta name="msapplication-TileImage" content="/wp-content/uploads/2026/07/logo-300x300.png">
 <!-- กลับด้านบน -->
 <link rel="stylesheet" id="back-to-top-css" href="./css/back-to-top.css" media="all">
+	<!-- 📌 วางแทรกโค้ดจัดเมนูชิดขวาตรงนี้ -->
+<style>
+  .site-header .header-inner {
+    display: flex;
+    justify-content: space-between; /* โลโก้อยู่ซ้าย เมนูดันไปขวา */
+    align-items: center;
+  }
+  .site-header .site-navigation {
+    margin-left: auto;
+  }
+  .site-header .site-navigation ul.menu {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+  }
+</style>
 </head>
 <body class="home wp-singular page-template page-template-elementor_header_footer page page-id-35 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor eio-default hello-elementor-default elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-35">
 
