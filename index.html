@@ -106,29 +106,39 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 <header id="site-header" class="site-header dynamic-header header-stacked menu-dropdown-mobile" style="position: sticky; top: 0; z-index: 9999; width: 100%; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
 	<div class="header-inner">
+		<!-- 1. โลโก้อยู่ซ้าย -->
 		<div class="site-branding show-logo">
-							<div class="site-logo hide">
-					<a href="./" class="custom-logo-link" rel="home" aria-current="page"><img width="500" height="500" src="./images/logo.png" class="custom-logo" alt="ร้านนิพนธ์ ฟิล์ม นครปฐม รับติดฟิล์มรถยนต์และอาคาร" decoding="async" srcset="./images/logo.png 500w, ./images/logo-300x300.png 300w, ./images/logo-150x150.png 150w" sizes="(max-width: 500px) 100vw, 500px"></a>				</div>
-					</div>
+			<div class="site-logo hide">
+				<a href="./" class="custom-logo-link" rel="home" aria-current="page">
+					<img width="500" height="500" src="./images/logo.png" class="custom-logo" alt="ร้านนิพนธ์ ฟิล์ม นครปฐม รับติดฟิล์มรถยนต์และอาคาร" decoding="async">
+				</a>
+			</div>
+		</div>
 
-					<nav class="site-navigation show" aria-label="Main menu">
-				<ul id="menu-menubar" class="menu"><li id="menu-item-255" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-255"><a href="https://niponfilm.ainlife.work/">หน้าแรก</a></li>
-<li id="menu-item-256" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256"><a href="#services">บริการ</a></li>
-<li id="menu-item-257" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-257"><a href="#Portfolio">ผลงาน</a></li>
-<li id="menu-item-258" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-258"><a href="#contact">ติดต่อเรา</a></li>
-</ul>			</nav>
-							<div class="site-navigation-toggle-holder show">
-				<button type="button" class="site-navigation-toggle" aria-label="Menu">
-					<span class="site-navigation-toggle-icon" aria-hidden="true"></span>
-				</button>
-			</div>
-			<nav class="site-navigation-dropdown show" aria-label="Mobile menu" aria-hidden="true" inert>
-				<ul id="menu-menubar-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-255"><a href="https://niponfilm.ainlife.work/">หน้าแรก</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256"><a href="#services">บริการ</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-257"><a href="#Portfolio">ผลงาน</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-258"><a href="#contact">ติดต่อเรา</a></li>
-</ul>			</nav>
-			</div>
+		<!-- 2. เมนูอยู่ถัดมา (และใช้ CSS ด้านบนดันไปขวาสุด) -->
+		<nav class="site-navigation show" aria-label="Main menu">
+			<ul id="menu-menubar" class="menu">
+				<li id="menu-item-255" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-255"><a href="https://niponfilm.ainlife.work/">หน้าแรก</a></li>
+				<li id="menu-item-256" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256"><a href="#services">บริการ</a></li>
+				<li id="menu-item-257" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-257"><a href="#Portfolio">ผลงาน</a></li>
+				<li id="menu-item-258" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-258"><a href="#contact">ติดต่อเรา</a></li>
+			</ul>
+		</nav>
+
+		<div class="site-navigation-toggle-holder show">
+			<button type="button" class="site-navigation-toggle" aria-label="Menu">
+				<span class="site-navigation-toggle-icon" aria-hidden="true"></span>
+			</button>
+		</div>
+		<nav class="site-navigation-dropdown show" aria-label="Mobile menu" aria-hidden="true" inert>
+			<ul id="menu-menubar-1" class="menu">
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-255"><a href="https://niponfilm.ainlife.work/">หน้าแรก</a></li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256"><a href="#services">บริการ</a></li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-257"><a href="#Portfolio">ผลงาน</a></li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-258"><a href="#contact">ติดต่อเรา</a></li>
+			</ul>
+		</nav>
+	</div>
 </header>
 		<div data-elementor-type="wp-page" data-elementor-id="35" class="elementor elementor-35">
 				<div class="elementor-element elementor-element-d5cfde3 e-flex e-con-boxed e-con e-parent" data-id="d5cfde3" data-element_type="container" data-e-type="container" data-settings='{"background_background":"classic"}'>
