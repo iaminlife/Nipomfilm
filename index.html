@@ -98,21 +98,31 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <meta name="msapplication-TileImage" content="/wp-content/uploads/2026/07/logo-300x300.png">
 <!-- กลับด้านบน -->
 <link rel="stylesheet" id="back-to-top-css" href="./css/back-to-top.css" media="all">
-	<!-- 📌 วางแทรกโค้ดจัดเมนูชิดขวาตรงนี้ -->
+	<!-- 📌 CSS สำหรับปรับเฉพาะ Dropdown Menu และปุ่มเมนูมือถือให้อยู่ด้านขวา -->
 <style>
+  /* 1. ดันปุ่มเปิด/ปิดเมนู (Hamburger Icon) ไปชิดขวา */
   .site-header .header-inner {
     display: flex;
-    justify-content: space-between; /* โลโก้อยู่ซ้าย เมนูดันไปขวา */
+    justify-content: space-between;
     align-items: center;
   }
-  .site-header .site-navigation {
-    margin-left: auto;
+  
+  .site-header .site-navigation-toggle-holder {
+    margin-left: auto; /* ดันปุ่ม 3 ขีดไปขวาสุด */
   }
-  .site-header .site-navigation ul.menu {
-    display: flex;
+
+  /* 2. จัดกล่อง Dropdown Menu ให้อยู่ทางขวา */
+  .site-header .site-navigation-dropdown {
+    right: 0;
+    left: auto;
+    text-align: right; /* จัดข้อความในเมนูชิดขวา */
+  }
+
+  /* 3. จัดตัวหนังสือในรายการเมนูแต่ละข้อให้ชิดขวา */
+  .site-header .site-navigation-dropdown ul.menu li,
+  .site-header .site-navigation-dropdown ul.menu li a {
+    text-align: right;
     justify-content: flex-end;
-    margin: 0;
-    padding: 0;
   }
 </style>
 </head>
